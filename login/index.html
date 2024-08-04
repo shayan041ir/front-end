@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="my-form">
+        <div class="login-welcome-row">
+            <a href="#" title="Logo">
+                <img src="assets/logo.svg" alt="Logo" class="logo">
+            </a>
+            <h1>Welcome back &#x1F44F;</h1>
+            <p>Please enter your details!</p>
+        </div>
+        <div class="input__wrapper">
+            <input type="text" id="email" name="email" class="input__field" placeholder="Your usernam" required
+                autocomplete="off">
+            <label for="username" class="input__label">username</label>
+        </div>
+
+        <div class="input__wrapper">
+            <input id="password" type="password" class="input__field" placeholder="Your Password"
+                title="Minimum 6 characters at least 1 Alphabet and 1 Number"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required autocomplete="off">
+
+            <label for="password" class="input__label">
+                Password
+            </label>
+
+        </div>
+
+        <button type="submit" class="my-form__button">
+            Login
+        </button>
+
+        <div class="socials-row">
+            <a href="#" title="Use Google">
+                Sign Up
+            </a>
+        </div>
+
+    </form>
+</body>
+
+</html>
