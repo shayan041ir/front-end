@@ -1,0 +1,278 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c162d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 320px;
+    background-color: #1b2a47;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  
+  .profile {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .prof-place {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .prof-place img {
+    width: 80px;
+    height: 100px;
+    border-radius: 10%;
+  }
+  
+  .prof-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  .prof-details h2 {
+    margin: 0;
+  }
+  
+  .status {
+    background-color: #666565;
+    font-size: 14px;
+    color: #000;
+    border: solid #666565;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .coins {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .coinsb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 17px;
+    border-radius: 10%;
+    border: solid #ffd700;
+  }
+  
+  .coinsb img {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .coinsb span {
+    font-size: 12px;
+  }
+  
+  .vip {
+    background-color: #ffd700;
+    color: #000;
+    padding: 8px 43px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    background-color: #666565;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.stat-item span {
+    font-size: 14px;
+}
+
+.stat-item img {
+    width: 20px;
+    height: 20px;
+}
+
+  
+.menu {
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-item.active {
+    background-color: #3366cc;
+}
+
+.menu-item:hover {
+    background-color: #4caf50;
+}
+
+.menu-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.menu-item span {
+    flex-grow: 1;
+}
+
+.extra-icon {
+    margin-left: 10px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #f44336;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.extra-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: -20px;
+    top: 7px;
+}
+  .friends {
+    margin-bottom: 20px;
+  }
+  
+  .friends h3 {
+    margin: 0 0 10px;
+    display: inline-block;
+  }
+  
+  .view-all {
+    float: right;
+    font-size: 12px;
+    color: #ffa500;
+    text-decoration: none;
+  }
+  
+  .friends ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .friend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .friend img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .friend span {
+    flex-grow: 1;
+  }
+  
+  .friend .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .theme-switcher {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .theme-switcher button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .theme-switcher .light {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .theme-switcher .dark {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .theme-switcher .active {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  /* Light theme */
+  body.light-theme {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  body.light-theme .sidebar {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  body.light-theme .menu-item.active,
+  body.light-theme .menu-item:hover {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  body.light-theme .badge {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
