@@ -1,0 +1,421 @@
+body {
+  background: url(img/bg.png) repeat-x;
+  margin: 0px;
+  padding: 0px;
+  font: 8pt Tahoma, Geneva, sans-serif;
+  direction: rtl;
+}
+p,li,ul {
+  margin: 0px;
+  padding: 0px;
+}
+/* این کد به مرورگر می‌گوید که هر عنصری که کلاس "cls" را دارد، باید همه اطلاعات مخاطبی (floats) را پاک کند و از سمت راست و چپ آن‌ها فاصله بگیرد. به این ترتیب، عناصر دیگری که با عناصر حاوی کلاس "cls" در یک خط یا ستون هستند، نمی‌توانند داخل هم قرار گیرند و به وضوح مرتب شوند. */
+div.cls {
+  clear: both;
+}
+/* ادرس برکه های دیکر  */
+#tooltip {
+  position: absolute;
+  background: #000;
+  padding: 5px 5px;
+  color: #fff;
+  display: none;
+  -webkit-box-shadow: 0 0 8px #444;
+  -moz-box-shadow: 0 0 8px #444;
+  box-shadow: 0 0 8px #444;
+}
+
+/* ---------------------- header ------------------------ */
+div.header {
+  position: relative;
+  margin: 0px auto;
+  background: url(img/header.jpg);
+  width: 1000px;
+  height: 119px;
+}
+div.header ul.ico_top {
+  position: absolute;
+  top: 24px;
+  left: 20px;
+}
+div.header ul.ico_top li {
+  position: relative;
+  cursor: pointer;
+  float: right;
+  list-style: none;
+  margin-left: 2px;
+  background: url(img/ico_top.png);
+  width: 60px;
+  height: 49px;
+}
+div.header ul.ico_top li:hover {
+  background-position: bottom;
+}
+div.header ul.ico_top li img {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+}
+div.header div.link_bar {
+  position: absolute;
+  top: 89px;
+  right: 30px;
+}
+div.header div.link_bar a {
+  color: #eee;
+  text-decoration: none;
+  text-shadow: 0px 1px #000;
+}
+/* اینپوت سرچ */
+div.header div.search {
+  position: absolute;
+  left: 36px;
+  top: 90px;
+}
+div.header div.search input {
+  font: 8pt Tahoma, Geneva, sans-serif;
+  background: none;
+  text-align: right;
+  direction: rtl;
+  text-shadow: 0px 1px #ccc;
+  border: none;
+  width: 180px;
+}
+div.header div.search_submit {
+  position: absolute;
+  left: 223px;
+  top: 85px;
+}
+div.header div.search_submit button {
+  background: none;
+  border: none;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+}
+/* ---------------------- box1 ------------------------ */
+/*همان مروری بر اخبار روز */
+div#slide1,
+div#slide2 {
+  display: none;
+}
+div.body_box {
+  margin: 0px auto;
+  width: 1000px;
+}
+div.body_box div.body_box_bg {
+  margin-right: 17px;
+  background: #fff;
+  width: 960px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+div.box_left {
+  background: #eee;
+  float: left;
+  width: 710px;
+}
+div.box_left ul.news_list {
+  margin-right: 4px;
+  margin-top: 4px;
+  background: url(img/news_box.png);
+  width: 701px;
+  height: 63px;
+}
+div.box_left ul.news_list li {
+  margin-top: 5px;
+  width: 50px;
+  height: 50px;
+  float: left;
+  list-style: none;
+}
+div.box_left ul.news_list li:hover {
+  background: #fff;
+  opacity: 0.3;
+}
+ul.news_list li.i6 {
+  margin-left: 6px;
+}
+ul.news_list li.i5 {
+  margin-left: 5px;
+}
+ul.news_list li.i4 {
+  margin-left: 4px;
+}
+ul.news_list li.i3 {
+  margin-left: 3px;
+}
+div.top_box_news {
+  background: #fff;
+  margin: 4px;
+  padding: 3px;
+  font: 8pt/1.7 Tahoma, Geneva, sans-serif;
+  direction: rtl;
+}
+div.top_box_news div.top_box_news_right {
+  background: url(img/bgnews_top.jpg);
+  padding: 2px;
+  width: 420px;
+  height: 130px;
+  float: right;
+  overflow: hidden;
+}
+div.top_box_news div.top_box_news_right a {
+  text-decoration: none;
+  color: #666130;
+  font: 16px/2 "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+div.top_box_news div.top_box_news_right img {
+  float: right;
+  padding: 2px;
+  margin: 8px;
+  border: 1px solid #ccc;
+}
+div.top_box_news div.top_box_news_left {
+  position: relative;
+  overflow: hidden;
+  margin-right: 4px;
+  background: url(img/bg_news_top.jpg) #eee;
+  padding: 2px;
+  width: 264px;
+  height: 130px;
+  float: right;
+}
+div.top_box_news div.top_box_news_left P {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  padding: 2px;
+  background: #80bf70;
+  color: #fff;
+}
+div.top_box_news div.top_box_news_left ul.top_news {
+  position: absolute;
+  top: 30px;
+  left: 4px;
+  right: 2px;
+}
+div.top_box_news div.top_box_news_left ul.top_news li {
+  list-style: none;
+  background-color: #eee;
+  border-right: 2px solid #fff;
+  margin: 2px;
+  padding: 2px;
+}
+div.top_box_news div.top_box_news_left ul.top_news li a {
+  color: #333;
+  text-decoration: none;
+}
+div.top_box_news div.top_box_news_left ul.top_news li:hover {
+  background: #fff;
+}
+div.box_right {
+  margin-left: 3px;
+  width: 244px;
+  float: left;
+  background: #eee;
+}
+div.box_right div.title_more {
+  position: relative;
+  margin-top: 4px;
+  background: url(img/img_01.jpg);
+  width: 243px;
+  height: 23px;
+}
+div.box_right div.title_more b {
+  position: absolute;
+  right: 30px;
+  top: 3px;
+  color: #fff;
+  text-shadow: 0px 1px #999;
+}
+div.box_right div.title_more0 {
+  position: relative;
+  margin-top: 4px;
+  width: 243px;
+  height: 23px;
+}
+div.box_right div.title_more0 b {
+  position: absolute;
+  right: 30px;
+  top: 3px;
+  color: #fff;
+  text-shadow: 0px 1px #999;
+}
+div.box_right ul.box_news_i li {
+  height: 60px;
+  overflow: hidden;
+  list-style: none;
+  border-right: 3px solid #ccc;
+  padding: 3px;
+  margin: 2px;
+  background: #fff;
+}
+div.box_right ul.box_news_i li img {
+  float: right;
+  padding: 2px;
+  border: 1px solid #999;
+  margin: 5px;
+}
+div.box_right ul.box_news_i li:hover {
+  border-right: 3px solid #666;
+  background: none;
+}
+div.pad {
+  padding: 3px;
+  font: 8pt/1.7 Tahoma, Geneva, sans-serif;
+}
+div.body_text {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+/* تبلیغات */
+div.body_text div.ads {
+  background: #fff;
+  width: 134px;
+  float: left;
+  padding: 3px;
+}
+div.body_text div.linkdoni {
+  background: #fff;
+  width: 190px;
+  float: left;
+  padding: 3px;
+  margin-left: 3px;
+}
+div.body_text div.linkdoni div.title_linkdoni {
+  position: relative;
+  background: url(img/title-link2.jpg);
+  width: 190px;
+  height: 38px;
+}
+div.body_text div.linkdoni div.title_linkdoni b {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  color: #fff;
+}
+div.body_text div.linkdoni ul.link_box2 li {
+  list-style: inside url(img/li-3.jpg);
+  font: 8pt/1.8 Tahoma, Geneva, sans-serif;
+}
+div.body_text div.linkdoni ul.link_box2 li:hover {
+  list-style: inside url(img/li-4.jpg);
+}
+div.body_text div.linkdoni ul.link_box2 li a {
+  color: #5a92a9;
+  text-decoration: none;
+}
+div.body_text div.linkdoni ul.link_box2 li a:hover {
+  color: #c91d1d;
+  text-decoration: none;
+  text-shadow: 0 0 5px #e7b0b0;
+}
+div.postbox {
+  background: #fff;
+  width: 354px;
+  float: left;
+  padding: 3px;
+  margin-left: 3px;
+}
+ul.link_box1 {
+  background: #f7f7f7;
+  padding: 3px;
+}
+ul.link_box1 li {
+  list-style: inside url(img/li-1.jpg);
+}
+ul.link_box1 li:hover {
+  list-style: inside url(img/li-2.jpg);
+}
+ul.link_box1 li a {
+  font: 8pt/1.8 Tahoma, Geneva, sans-serif;
+  text-decoration: none;
+  color: #333;
+}
+ul.link_box1 li a:hover {
+  color: #579a45;
+}
+/* post */
+/* بدنه وسط سایت */
+div.shortstory {
+  border-bottom: 1px double #ccc;
+  font: 8pt/1.7 Tahoma, Geneva, sans-serif;
+  direction: rtl;
+}
+div.shortstory b a {
+  font: 16px "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #1809a6;
+  text-decoration: none;
+}
+div.shortstory b a:hover {
+  color: #c91d1d;
+}
+div.shortstory img {
+  float: right;
+  border: 1px solid #ccc;
+  padding: 2px;
+  margin: 4px;
+}
+ul.pageNav li {
+  display: block;
+  float: right;
+  padding: 3px;
+  font: 8pt Tahoma, Geneva, sans-serif;
+}
+
+ul.pageNav li a {
+  color: #333;
+  text-decoration: none;
+}
+
+li.currentPage {
+  background: red;
+  background: #83bd63;
+}
+
+ul.pageNav li.currentPage a {
+  color: #fff;
+}
+
+/* ---------------------------- */
+/* ---------------------------- */
+
+div.footer {
+  position: absolute;
+  top: 980px;
+  border-top: 1px solid #ffffff;
+  background-color: #467598;
+  width: 1000px;
+  height: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+div.footer div.footer_bg {
+  position: relative;
+  width: 1000px;
+  height: 62px;
+  margin: 0px auto;
+}
+div.footer div.footer-tel {
+  overflow: hidden;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(90%, -50%);
+  color: #fff;
+  font: 8pt/2 Tahoma, Geneva, sans-serif;
+}
+/* جایگاه لوگو  های فوتر و هدر */
+.header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(280%, -20%);
+}
+.footer-logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-300%, -50%);
+}
